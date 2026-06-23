@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoes Titanik - Tallas Grandes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>👟 Shoes Titanik</h1>
+  <p>Calzado inclusivo en tallas grandes (45+)</p>
+</header>
+
+<section class="catalogo">
+  <h2>Catálogo Interactivo</h2>
+  <div class="zapato">Oxford</div>
+  <div class="zapato">Mocasín</div>
+  <div class="zapato">Sneaker</div>
+</section>
+
+<section class="personalizacion">
+  <h2>Personaliza tu Zapato</h2>
+  <p>Selecciona un color:</p>
+  <div class="color-option color-azul" onclick="cambiarColor('azul')"></div>
+  <div class="color-option color-negro" onclick="cambiarColor('negro')"></div>
+  <div class="color-option color-marron" onclick="cambiarColor('marron')"></div>
+
+  <div class="preview">
+    <p>Vista previa del zapato:</p>
+    <img id="previewZapato" src="img/zapato_negro.png" alt="Zapato personalizado">
+  </div>
+</section>
+
+<section class="medidas">
+  <h2>Sube tu foto o medidas</h2>
+  <form>
+    <label>Foto del pie:</label>
+    <input type="file" accept="image/*"><br><br>
+    <label>Largo (cm):</label>
+    <input type="number"><br>
+    <label>Ancho (cm):</label>
+    <input type="number"><br>
+    <label>Talón (cm):</label>
+    <input type="number"><br>
+    <button type="submit">Procesar con IA</button>
+  </form>
+</section>
+
+<section class="preview3D">
+  <h2>Modelo 3D generado</h2>
+  <p>Aquí se mostrará el pie del cliente en 3D con el zapato elegido:</p>
+  <div>Renderizado 3D (conceptual)</div>
+</section>
+
+<footer>
+  <p>© 2026 Shoes Titanik S.A.C - Experiencia WOW</p>
+</footer>
+
+</body>
+</html>
