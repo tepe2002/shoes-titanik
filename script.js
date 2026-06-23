@@ -24,6 +24,10 @@ function cambiarColor(color) {
 
 function mostrarOpcionesColor() {
     const contenedor = document.getElementById("colorOptions");
+
+    // Si no existe el contenedor, no hacer nada
+    if (!contenedor) return;
+
     contenedor.innerHTML = "";
 
     coloresDisponibles[modeloActual].forEach(color => {
@@ -36,6 +40,9 @@ function mostrarOpcionesColor() {
 
 function actualizarVista() {
     const preview = document.getElementById("previewZapato");
+
+    if (!preview) return;
+
     preview.style.opacity = 0;
 
     setTimeout(() => {
