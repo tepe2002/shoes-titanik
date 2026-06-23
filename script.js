@@ -25,8 +25,7 @@ function cambiarColor(color) {
 function mostrarOpcionesColor() {
     const contenedor = document.getElementById("colorOptions");
 
-    // Si no existe el contenedor, no hacer nada
-    if (!contenedor) return;
+    if (!contenedor) return; // seguridad
 
     contenedor.innerHTML = "";
 
@@ -41,7 +40,7 @@ function mostrarOpcionesColor() {
 function actualizarVista() {
     const preview = document.getElementById("previewZapato");
 
-    if (!preview) return;
+    if (!preview) return; // seguridad
 
     preview.style.opacity = 0;
 
