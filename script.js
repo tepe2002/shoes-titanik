@@ -25,7 +25,7 @@ function cambiarColor(color) {
 function mostrarOpcionesColor() {
     const contenedor = document.getElementById("colorOptions");
 
-    if (!contenedor) return; // seguridad
+    if (!contenedor) return;
 
     contenedor.innerHTML = "";
 
@@ -40,7 +40,7 @@ function mostrarOpcionesColor() {
 function actualizarVista() {
     const preview = document.getElementById("previewZapato");
 
-    if (!preview) return; // seguridad
+    if (!preview) return;
 
     preview.style.opacity = 0;
 
@@ -61,10 +61,16 @@ function actualizarVista() {
             nombreArchivo = modeloActual + "_" + colorActual + ".png";
         }
 
-        // Como las imágenes están en la raíz del repositorio
         preview.src = nombreArchivo;
         preview.style.opacity = 1;
     }, 250);
+}
+
+// Función para mostrar ayuda con imágenes
+function mostrarAyuda(tipo) {
+    if (tipo === "talon") {
+        window.open("talon_medida.png", "_blank");
+    }
 }
 
 window.onload = () => {
