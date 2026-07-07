@@ -87,3 +87,13 @@ footer {
     background:#1a1a1a;
     color:white;
 }
+
+.help-icon {
+    cursor: pointer;
+    margin-left: 8px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+.help-icon:hover {
+    color: #333;
+}
